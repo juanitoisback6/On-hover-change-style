@@ -1,0 +1,89 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+
+* {
+   
+   background-color: rgb(0, 0, 0);
+  font-family: 'Pixelify Sans', sans-serif;
+  color: #ffffff;
+}
+
+
+#title{
+animation: brilloAnimado 3s ease-out infinite alternate;
+          text-align: center;
+}
+
+#box {
+
+width: 200px;
+height: 200px;
+background-color: rgb(255, 255, 255);
+border-radius: 120px;
+animation: brilloBloque 3s ease-out infinite alternate;
+
+ 
+border: 10px solid rgba(114, 5, 5, 0.527);
+}
+
+
+#boxcont{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+
+
+@keyframes brilloAnimado {
+      0% {
+        text-shadow: 0 0 1px #fff,
+                     0 0 10px rgba(12, 22, 211, 0.315),
+                     0 0 20px rgba(44, 6, 180, 0.5),
+                     0 0 10px rgba(16, 102, 102, 0.637);
+      }
+    50% {
+        text-shadow: 0 0 1px #fff,
+                     0 6px 10px rgba(37, 97, 160, 0.326),
+                     0 10px 20px rgb(121, 98, 207),
+                     0 0 10px rgb(11, 37, 37);
+      }
+      100% {
+        text-shadow: 0 0px 10px #fff,
+                     0 0 10px rgb(146, 151, 76),
+                     0 0 10px rgb(66, 83, 34),
+                     0 0 30px rgb(181, 184, 25);
+      }
+
+
+    }
+
+
+    @keyframes brilloBloque {
+  0% {
+    box-shadow: 
+      0 0 1px #fff,
+      0 0 10px rgba(12, 22, 211, 0.315),
+      0 0 20px rgba(44, 6, 180, 0.5),
+      0 0 10px rgba(16, 102, 102, 0.637);
+  }
+
+  50% {
+    box-shadow: 
+      0 0 1px #fff,
+      0 6px 10px rgba(37, 97, 160, 0.326),
+      0 10px 20px rgb(121, 98, 207),
+      0 0 10px rgb(11, 37, 37);
+  }
+
+  100% {
+    box-shadow:
+      0 0 10px #fff,
+      0 0 10px rgb(146, 151, 76),
+      0 0 10px rgb(66, 83, 34),
+      0 0 30px rgb(181, 184, 25);
+  }
+}
